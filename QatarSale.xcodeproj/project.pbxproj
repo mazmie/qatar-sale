@@ -22,6 +22,10 @@
 		17F3D6D227369E7C00D94571 /* SearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3D6D127369E7C00D94571 /* SearchField.swift */; };
 		17F3D6E22736B88A00D94571 /* VehiclesRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3D6E12736B88A00D94571 /* VehiclesRepo.swift */; };
 		17F3D6E52736BAD400D94571 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3D6E42736BAD400D94571 /* Vehicle.swift */; };
+		17F3D6ED2736BB3E00D94571 /* VehicleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3D6E92736BB3E00D94571 /* VehicleCell.swift */; };
+		17F3D6EE2736BB3E00D94571 /* VehicleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17F3D6EA2736BB3E00D94571 /* VehicleCell.xib */; };
+		17F3D6EF2736BB3E00D94571 /* PostAdCategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3D6EB2736BB3E00D94571 /* PostAdCategoryController.swift */; };
+		17F3D6F02736BB3E00D94571 /* PostAdCategoryController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17F3D6EC2736BB3E00D94571 /* PostAdCategoryController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,10 @@
 		17F3D6D127369E7C00D94571 /* SearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchField.swift; sourceTree = "<group>"; };
 		17F3D6E12736B88A00D94571 /* VehiclesRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesRepo.swift; sourceTree = "<group>"; };
 		17F3D6E42736BAD400D94571 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		17F3D6E92736BB3E00D94571 /* VehicleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleCell.swift; sourceTree = "<group>"; };
+		17F3D6EA2736BB3E00D94571 /* VehicleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VehicleCell.xib; sourceTree = "<group>"; };
+		17F3D6EB2736BB3E00D94571 /* PostAdCategoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostAdCategoryController.swift; sourceTree = "<group>"; };
+		17F3D6EC2736BB3E00D94571 /* PostAdCategoryController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostAdCategoryController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,7 @@
 		17F3D6A42736807500D94571 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				17F3D6E62736BB3E00D94571 /* PostAdCategoryController */,
 				17F3D6C4273696A000D94571 /* PostAdWizardController */,
 			);
 			path = ViewControllers;
@@ -174,6 +183,33 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		17F3D6E62736BB3E00D94571 /* PostAdCategoryController */ = {
+			isa = PBXGroup;
+			children = (
+				17F3D6E72736BB3E00D94571 /* Cells */,
+				17F3D6EB2736BB3E00D94571 /* PostAdCategoryController.swift */,
+				17F3D6EC2736BB3E00D94571 /* PostAdCategoryController.xib */,
+			);
+			path = PostAdCategoryController;
+			sourceTree = "<group>";
+		};
+		17F3D6E72736BB3E00D94571 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				17F3D6E82736BB3E00D94571 /* VehicleCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		17F3D6E82736BB3E00D94571 /* VehicleCell */ = {
+			isa = PBXGroup;
+			children = (
+				17F3D6E92736BB3E00D94571 /* VehicleCell.swift */,
+				17F3D6EA2736BB3E00D94571 /* VehicleCell.xib */,
+			);
+			path = VehicleCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -234,6 +270,8 @@
 			files = (
 				17F3D6B6273683B200D94571 /* Nunito-Regular.ttf in Resources */,
 				17F3D69D2736805700D94571 /* LaunchScreen.storyboard in Resources */,
+				17F3D6F02736BB3E00D94571 /* PostAdCategoryController.xib in Resources */,
+				17F3D6EE2736BB3E00D94571 /* VehicleCell.xib in Resources */,
 				17F3D69A2736805700D94571 /* Assets.xcassets in Resources */,
 				17F3D6B7273683B200D94571 /* Nunito-Bold.ttf in Resources */,
 				17F3D6982736805600D94571 /* Main.storyboard in Resources */,
@@ -248,6 +286,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17F3D6EF2736BB3E00D94571 /* PostAdCategoryController.swift in Sources */,
+				17F3D6ED2736BB3E00D94571 /* VehicleCell.swift in Sources */,
 				17F3D6E52736BAD400D94571 /* Vehicle.swift in Sources */,
 				17F3D6E22736B88A00D94571 /* VehiclesRepo.swift in Sources */,
 				17F3D6C7273696A000D94571 /* PostAdMainController.swift in Sources */,
