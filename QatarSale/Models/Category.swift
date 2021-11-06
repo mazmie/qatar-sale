@@ -7,8 +7,13 @@
 
 import Foundation
 
-struct Category {
-    var id = 314
+struct CategoryGroup {
     var title: String
-    var items: [String]
+    var items: [Category]
+}
+
+struct Category {
+    var id: Int
+    var title: String
+    var isSelected = false
 }

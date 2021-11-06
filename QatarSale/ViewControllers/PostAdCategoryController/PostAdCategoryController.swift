@@ -14,6 +14,8 @@ class PostAdCategoryController: UIViewController {
     @IBOutlet weak var vehicleTbl: UITableView!
     @IBOutlet weak var categoryTbl: UITableView!
     
+    var selectedCategoryDidChange: ((String) -> Void)?
+    
     // MARK: Overrides
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +52,7 @@ extension PostAdCategoryController: UITableViewDataSource {
         case vehicleTbl:
             return VehiclesRepo.items.count
         case categoryTbl:
-            return CategoryRepo.items[section].items.count
+            return CategoryRepo.groups[section].items.count
         default:
             return 0
         }
@@ -78,7 +80,9 @@ extension PostAdCategoryController: UITableViewDataSource {
     func categoryCell(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CategoryCell.identifier, for: indexPath) as? CategoryCell
         
-        cell?.configure(title: CategoryRepo.items[indexPath.section].items[indexPath.row])
+        cell?.configure(
+            model: CategoryRepo.groups[indexPath.section].items[indexPath.row],
+            delegate: self)
         
         return cell ?? UITableViewCell()
     }
@@ -91,7 +95,7 @@ extension PostAdCategoryController: UITableViewDelegate {
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return tableView == categoryTbl ? CategoryRepo.items.count : 1
+        return tableView == categoryTbl ? CategoryRepo.groups.count : 1
     }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         switch tableView {
@@ -100,7 +104,7 @@ extension PostAdCategoryController: UITableViewDelegate {
         case categoryTbl:
             let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: CategoryHeader.identifier) as? CategoryHeader
             
-            header?.configure(title: CategoryRepo.items[section].title)
+            header?.configure(title: CategoryRepo.groups[section].title)
             
             return header
         default:
@@ -132,5 +136,35 @@ extension PostAdCategoryController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 0
+    }
+}
+
+extension PostAdCategoryController: CategoryCellDelegate {
+    func categoryCellTapped(_ cell: CategoryCell) {
+        guard let id = cell.model?.id else { return }
+        
+        var indexPaths: [IndexPath] = []
+        
+        for gIndex in 0..<CategoryRepo.groups.count {
+            for iIndex in 0..<CategoryRepo.groups[gIndex].items.count {
+                if CategoryRepo.groups[gIndex].items[iIndex].id == id {
+                    CategoryRepo.groups[gIndex].items[iIndex].isSelected = !CategoryRepo.groups[gIndex].items[iIndex].isSelected
+                    indexPaths.append(IndexPath(row: iIndex, section: gIndex))
+                    selectedCategoryDidChange?(CategoryRepo.groups[gIndex].items[iIndex].title)
+                } else {
+                    if CategoryRepo.groups[gIndex].items[iIndex].isSelected {
+                        indexPaths.append(IndexPath(row: iIndex, section: gIndex))
+                        CategoryRepo.groups[gIndex].items[iIndex].isSelected = false
+                    }
+                }
+            }
+        }
+        
+        if !indexPaths.isEmpty {
+            categoryTbl.beginUpdates()
+            categoryTbl.reloadRows(at: indexPaths, with: .fade)
+            categoryTbl.endUpdates()
+        }
+        
     }
 }

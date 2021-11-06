@@ -39,9 +39,14 @@ class PostAdMainController: UIViewController {
     }
     
     private func setCurrentController() {
+        let controller = PostAdCategoryController()
+        controller.selectedCategoryDidChange = { title in
+            self.selectedCategoryLbl.textColor = ThemeManager.Color._0091ff.color
+            self.selectedCategoryLbl.text = title
+        }
         DispatchQueue.main.async {
             self.pageViewController.setViewControllers(
-                [PostAdCategoryController()],
+                [controller],
                 direction: self.direction,
                 animated: true,
                 completion: nil)
