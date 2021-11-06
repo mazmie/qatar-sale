@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PostAdMainController" customModule="QatarSale" customModuleProvider="target">
             <connections>
                 <outlet property="categoryLbl" destination="T0d-4T-vKi" id="8Q5-kX-ykg"/>
+                <outlet property="pagerContainerView" destination="uvw-EF-Bsg" id="EN9-vZ-O5a"/>
                 <outlet property="selectedCategoryLbl" destination="XRP-Yl-UjS" id="sg6-q0-Gef"/>
                 <outlet property="titleLbl" destination="Ba2-HI-rZS" id="cki-lP-0yL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -66,6 +67,10 @@
                         </stackView>
                     </subviews>
                 </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uvw-EF-Bsg">
+                    <rect key="frame" x="0.0" y="174.5" width="414" height="687.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -74,8 +79,12 @@
                 <constraint firstItem="EKb-BB-fMz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="JwY-5o-NLi"/>
                 <constraint firstItem="A6A-fe-bbg" firstAttribute="top" secondItem="Ba2-HI-rZS" secondAttribute="bottom" constant="32" id="Knj-0i-CF0"/>
                 <constraint firstItem="Ba2-HI-rZS" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="cYI-Q7-Jez"/>
+                <constraint firstItem="uvw-EF-Bsg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="g66-Di-r0e"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uvw-EF-Bsg" secondAttribute="trailing" id="m2M-PG-yqc"/>
                 <constraint firstItem="EKb-BB-fMz" firstAttribute="centerY" secondItem="Ba2-HI-rZS" secondAttribute="centerY" id="qlc-LU-DtE"/>
                 <constraint firstItem="Ba2-HI-rZS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="sm5-Xk-myV"/>
+                <constraint firstItem="uvw-EF-Bsg" firstAttribute="top" secondItem="A6A-fe-bbg" secondAttribute="bottom" constant="8" id="xEy-mU-9ny"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="uvw-EF-Bsg" secondAttribute="bottom" id="xq7-H2-A1d"/>
             </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="120.53571428571428"/>
         </view>
