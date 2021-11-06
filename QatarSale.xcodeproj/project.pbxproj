@@ -20,6 +20,8 @@
 		17F3D6CA273696AA00D94571 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3D6C9273696AA00D94571 /* UILabel.swift */; };
 		17F3D6CF27369D5000D94571 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3D6CE27369D5000D94571 /* UITextField.swift */; };
 		17F3D6D227369E7C00D94571 /* SearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3D6D127369E7C00D94571 /* SearchField.swift */; };
+		17F3D6E22736B88A00D94571 /* VehiclesRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3D6E12736B88A00D94571 /* VehiclesRepo.swift */; };
+		17F3D6E52736BAD400D94571 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3D6E42736BAD400D94571 /* Vehicle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		17F3D6C9273696AA00D94571 /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		17F3D6CE27369D5000D94571 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		17F3D6D127369E7C00D94571 /* SearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchField.swift; sourceTree = "<group>"; };
+		17F3D6E12736B88A00D94571 /* VehiclesRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesRepo.swift; sourceTree = "<group>"; };
+		17F3D6E42736BAD400D94571 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 		17F3D68F2736805600D94571 /* QatarSale */ = {
 			isa = PBXGroup;
 			children = (
+				17F3D6E32736BACA00D94571 /* Models */,
+				17F3D6E02736B86F00D94571 /* Repositories */,
 				17F3D6D027369E5800D94571 /* ViewClasses */,
 				17F3D6B827368C0E00D94571 /* Extensions */,
 				17F3D6B12736836C00D94571 /* Resources */,
@@ -152,6 +158,22 @@
 			path = ViewClasses;
 			sourceTree = "<group>";
 		};
+		17F3D6E02736B86F00D94571 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				17F3D6E12736B88A00D94571 /* VehiclesRepo.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		17F3D6E32736BACA00D94571 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				17F3D6E42736BAD400D94571 /* Vehicle.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -226,6 +248,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17F3D6E52736BAD400D94571 /* Vehicle.swift in Sources */,
+				17F3D6E22736B88A00D94571 /* VehiclesRepo.swift in Sources */,
 				17F3D6C7273696A000D94571 /* PostAdMainController.swift in Sources */,
 				17F3D6952736805600D94571 /* ViewController.swift in Sources */,
 				17F3D6912736805600D94571 /* AppDelegate.swift in Sources */,
