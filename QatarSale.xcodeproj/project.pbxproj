@@ -26,6 +26,8 @@
 		17F3D6EE2736BB3E00D94571 /* VehicleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17F3D6EA2736BB3E00D94571 /* VehicleCell.xib */; };
 		17F3D6EF2736BB3E00D94571 /* PostAdCategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3D6EB2736BB3E00D94571 /* PostAdCategoryController.swift */; };
 		17F3D6F02736BB3E00D94571 /* PostAdCategoryController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17F3D6EC2736BB3E00D94571 /* PostAdCategoryController.xib */; };
+		17F3D6FC2736C1A200D94571 /* CategoryRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3D6FB2736C1A200D94571 /* CategoryRepo.swift */; };
+		17F3D6FE2736C24400D94571 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3D6FD2736C24400D94571 /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		17F3D6EA2736BB3E00D94571 /* VehicleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VehicleCell.xib; sourceTree = "<group>"; };
 		17F3D6EB2736BB3E00D94571 /* PostAdCategoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostAdCategoryController.swift; sourceTree = "<group>"; };
 		17F3D6EC2736BB3E00D94571 /* PostAdCategoryController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostAdCategoryController.xib; sourceTree = "<group>"; };
+		17F3D6FB2736C1A200D94571 /* CategoryRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepo.swift; sourceTree = "<group>"; };
+		17F3D6FD2736C24400D94571 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				17F3D6E12736B88A00D94571 /* VehiclesRepo.swift */,
+				17F3D6FB2736C1A200D94571 /* CategoryRepo.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				17F3D6E42736BAD400D94571 /* Vehicle.swift */,
+				17F3D6FD2736C24400D94571 /* Category.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -292,9 +298,11 @@
 				17F3D6E22736B88A00D94571 /* VehiclesRepo.swift in Sources */,
 				17F3D6C7273696A000D94571 /* PostAdMainController.swift in Sources */,
 				17F3D6952736805600D94571 /* ViewController.swift in Sources */,
+				17F3D6FC2736C1A200D94571 /* CategoryRepo.swift in Sources */,
 				17F3D6912736805600D94571 /* AppDelegate.swift in Sources */,
 				17F3D6B02736822300D94571 /* ThemeManager.swift in Sources */,
 				17F3D6D227369E7C00D94571 /* SearchField.swift in Sources */,
+				17F3D6FE2736C24400D94571 /* Category.swift in Sources */,
 				17F3D6CA273696AA00D94571 /* UILabel.swift in Sources */,
 				17F3D6CF27369D5000D94571 /* UITextField.swift in Sources */,
 			);

@@ -41,6 +41,7 @@ class ThemeManager {
         case _ebebeb
         case f6f6f6
         case _252933
+        case _919191
         
         var color: UIColor {
             switch self {
@@ -49,6 +50,7 @@ class ThemeManager {
             case ._ebebeb: return UIColor(named: "#EBEBEB")!
             case .f6f6f6: return UIColor(named: "#F6F6F6")!
             case ._252933: return UIColor(named: "#252933")!
+            case ._919191: return UIColor(named: "#919191")!
             }
         }
         
