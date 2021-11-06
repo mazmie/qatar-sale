@@ -13,6 +13,9 @@
 		17F3D6982736805600D94571 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17F3D6962736805600D94571 /* Main.storyboard */; };
 		17F3D69A2736805700D94571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17F3D6992736805700D94571 /* Assets.xcassets */; };
 		17F3D69D2736805700D94571 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17F3D69B2736805700D94571 /* LaunchScreen.storyboard */; };
+		17F3D6B02736822300D94571 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3D6AF2736822300D94571 /* ThemeManager.swift */; };
+		17F3D6B6273683B200D94571 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17F3D6B4273683B200D94571 /* Nunito-Regular.ttf */; };
+		17F3D6B7273683B200D94571 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17F3D6B5273683B200D94571 /* Nunito-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		17F3D6992736805700D94571 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17F3D69C2736805700D94571 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17F3D69E2736805700D94571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17F3D6AF2736822300D94571 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		17F3D6B4273683B200D94571 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		17F3D6B5273683B200D94571 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,10 @@
 		17F3D68F2736805600D94571 /* QatarSale */ = {
 			isa = PBXGroup;
 			children = (
+				17F3D6B827368C0E00D94571 /* Extensions */,
+				17F3D6B12736836C00D94571 /* Resources */,
+				17F3D6AE2736821400D94571 /* Managers */,
+				17F3D6A42736807500D94571 /* ViewControllers */,
 				17F3D6902736805600D94571 /* AppDelegate.swift */,
 				17F3D6922736805600D94571 /* SceneDelegate.swift */,
 				17F3D6942736805600D94571 /* ViewController.swift */,
@@ -65,6 +75,53 @@
 				17F3D69E2736805700D94571 /* Info.plist */,
 			);
 			path = QatarSale;
+			sourceTree = "<group>";
+		};
+		17F3D6A42736807500D94571 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		17F3D6AE2736821400D94571 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				17F3D6AF2736822300D94571 /* ThemeManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		17F3D6B12736836C00D94571 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				17F3D6B22736837B00D94571 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		17F3D6B22736837B00D94571 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				17F3D6B32736838100D94571 /* Nunito */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		17F3D6B32736838100D94571 /* Nunito */ = {
+			isa = PBXGroup;
+			children = (
+				17F3D6B5273683B200D94571 /* Nunito-Bold.ttf */,
+				17F3D6B4273683B200D94571 /* Nunito-Regular.ttf */,
+			);
+			path = Nunito;
+			sourceTree = "<group>";
+		};
+		17F3D6B827368C0E00D94571 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +182,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17F3D6B6273683B200D94571 /* Nunito-Regular.ttf in Resources */,
 				17F3D69D2736805700D94571 /* LaunchScreen.storyboard in Resources */,
 				17F3D69A2736805700D94571 /* Assets.xcassets in Resources */,
+				17F3D6B7273683B200D94571 /* Nunito-Bold.ttf in Resources */,
 				17F3D6982736805600D94571 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +199,7 @@
 			files = (
 				17F3D6952736805600D94571 /* ViewController.swift in Sources */,
 				17F3D6912736805600D94571 /* AppDelegate.swift in Sources */,
+				17F3D6B02736822300D94571 /* ThemeManager.swift in Sources */,
 				17F3D6932736805600D94571 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
