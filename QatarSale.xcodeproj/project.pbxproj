@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		17F3D6912736805600D94571 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3D6902736805600D94571 /* AppDelegate.swift */; };
-		17F3D6932736805600D94571 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3D6922736805600D94571 /* SceneDelegate.swift */; };
 		17F3D6952736805600D94571 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3D6942736805600D94571 /* ViewController.swift */; };
 		17F3D6982736805600D94571 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17F3D6962736805600D94571 /* Main.storyboard */; };
 		17F3D69A2736805700D94571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17F3D6992736805700D94571 /* Assets.xcassets */; };
@@ -24,7 +23,6 @@
 /* Begin PBXFileReference section */
 		17F3D68D2736805600D94571 /* QatarSale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QatarSale.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F3D6902736805600D94571 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		17F3D6922736805600D94571 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		17F3D6942736805600D94571 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		17F3D6972736805600D94571 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17F3D6992736805700D94571 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,7 +71,6 @@
 				17F3D6AE2736821400D94571 /* Managers */,
 				17F3D6A42736807500D94571 /* ViewControllers */,
 				17F3D6902736805600D94571 /* AppDelegate.swift */,
-				17F3D6922736805600D94571 /* SceneDelegate.swift */,
 				17F3D6942736805600D94571 /* ViewController.swift */,
 				17F3D6962736805600D94571 /* Main.storyboard */,
 				17F3D6992736805700D94571 /* Assets.xcassets */,
@@ -220,7 +217,6 @@
 				17F3D6912736805600D94571 /* AppDelegate.swift in Sources */,
 				17F3D6B02736822300D94571 /* ThemeManager.swift in Sources */,
 				17F3D6CA273696AA00D94571 /* UILabel.swift in Sources */,
-				17F3D6932736805600D94571 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
