@@ -16,6 +16,9 @@
 		17F3D6B02736822300D94571 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3D6AF2736822300D94571 /* ThemeManager.swift */; };
 		17F3D6B6273683B200D94571 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17F3D6B4273683B200D94571 /* Nunito-Regular.ttf */; };
 		17F3D6B7273683B200D94571 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17F3D6B5273683B200D94571 /* Nunito-Bold.ttf */; };
+		17F3D6C7273696A000D94571 /* PostAdMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3D6C5273696A000D94571 /* PostAdMainController.swift */; };
+		17F3D6C8273696A000D94571 /* PostAdMainController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17F3D6C6273696A000D94571 /* PostAdMainController.xib */; };
+		17F3D6CA273696AA00D94571 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3D6C9273696AA00D94571 /* UILabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		17F3D6AF2736822300D94571 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		17F3D6B4273683B200D94571 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
 		17F3D6B5273683B200D94571 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		17F3D6C5273696A000D94571 /* PostAdMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostAdMainController.swift; sourceTree = "<group>"; };
+		17F3D6C6273696A000D94571 /* PostAdMainController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostAdMainController.xib; sourceTree = "<group>"; };
+		17F3D6C9273696AA00D94571 /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,7 @@
 		17F3D6A42736807500D94571 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				17F3D6C4273696A000D94571 /* PostAdWizardController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -120,8 +127,18 @@
 		17F3D6B827368C0E00D94571 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				17F3D6C9273696AA00D94571 /* UILabel.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		17F3D6C4273696A000D94571 /* PostAdWizardController */ = {
+			isa = PBXGroup;
+			children = (
+				17F3D6C5273696A000D94571 /* PostAdMainController.swift */,
+				17F3D6C6273696A000D94571 /* PostAdMainController.xib */,
+			);
+			path = PostAdWizardController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +204,7 @@
 				17F3D69A2736805700D94571 /* Assets.xcassets in Resources */,
 				17F3D6B7273683B200D94571 /* Nunito-Bold.ttf in Resources */,
 				17F3D6982736805600D94571 /* Main.storyboard in Resources */,
+				17F3D6C8273696A000D94571 /* PostAdMainController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,9 +215,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17F3D6C7273696A000D94571 /* PostAdMainController.swift in Sources */,
 				17F3D6952736805600D94571 /* ViewController.swift in Sources */,
 				17F3D6912736805600D94571 /* AppDelegate.swift in Sources */,
 				17F3D6B02736822300D94571 /* ThemeManager.swift in Sources */,
+				17F3D6CA273696AA00D94571 /* UILabel.swift in Sources */,
 				17F3D6932736805600D94571 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
