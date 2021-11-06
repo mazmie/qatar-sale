@@ -30,15 +30,21 @@ class PostAdMainController: UIViewController {
         categoryLbl.setup(font: .nunito(type: .bold, size: 18), color: ._282828)
         selectedCategoryLbl.setup(font: .nunito(type: .regular, size: 15), color: ._878787)
         
+        setupNextBtn()
+        setupPager()
+        setCurrentController()
+        setupButtonContainerView()
+    }
+    
+    private func setupNextBtn() {
         nextBtn.titleLabel?.setup(font: .nunito(type: .bold, size: 20), color: .white)
         nextBtn.layer.cornerRadius = nextBtn.layer.frame.height / 2
         nextBtn.clipsToBounds = true
         nextBtn.backgroundColor = ThemeManager.Color._1b418d.color
         nextBtn.setTitleColor(.white, for: .normal)
-        
-        setupPager()
-        setCurrentController()
-        
+    }
+    
+    private func setupButtonContainerView() {
         buttonContainerView.backgroundColor = .clear
         let gradient = CAGradientLayer()
         gradient.frame = buttonContainerView.bounds
