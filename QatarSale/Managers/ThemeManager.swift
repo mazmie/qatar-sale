@@ -38,12 +38,22 @@ class ThemeManager {
     enum Color {
         case _282828
         case _878787
+        case _ebebeb
+        case f6f6f6
+        case _252933
         
         var color: UIColor {
             switch self {
             case ._282828: return UIColor(named: "#282828")!
             case ._878787: return UIColor(named: "#878787")!
+            case ._ebebeb: return UIColor(named: "#EBEBEB")!
+            case .f6f6f6: return UIColor(named: "#F6F6F6")!
+            case ._252933: return UIColor(named: "#252933")!
             }
+        }
+        
+        var cgColor: CGColor {
+            return color.cgColor
         }
     }
     

@@ -18,6 +18,8 @@
 		17F3D6C7273696A000D94571 /* PostAdMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3D6C5273696A000D94571 /* PostAdMainController.swift */; };
 		17F3D6C8273696A000D94571 /* PostAdMainController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17F3D6C6273696A000D94571 /* PostAdMainController.xib */; };
 		17F3D6CA273696AA00D94571 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3D6C9273696AA00D94571 /* UILabel.swift */; };
+		17F3D6CF27369D5000D94571 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3D6CE27369D5000D94571 /* UITextField.swift */; };
+		17F3D6D227369E7C00D94571 /* SearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3D6D127369E7C00D94571 /* SearchField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		17F3D6C5273696A000D94571 /* PostAdMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostAdMainController.swift; sourceTree = "<group>"; };
 		17F3D6C6273696A000D94571 /* PostAdMainController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostAdMainController.xib; sourceTree = "<group>"; };
 		17F3D6C9273696AA00D94571 /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		17F3D6CE27369D5000D94571 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		17F3D6D127369E7C00D94571 /* SearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 		17F3D68F2736805600D94571 /* QatarSale */ = {
 			isa = PBXGroup;
 			children = (
+				17F3D6D027369E5800D94571 /* ViewClasses */,
 				17F3D6B827368C0E00D94571 /* Extensions */,
 				17F3D6B12736836C00D94571 /* Resources */,
 				17F3D6AE2736821400D94571 /* Managers */,
@@ -125,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				17F3D6C9273696AA00D94571 /* UILabel.swift */,
+				17F3D6CE27369D5000D94571 /* UITextField.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -136,6 +142,14 @@
 				17F3D6C6273696A000D94571 /* PostAdMainController.xib */,
 			);
 			path = PostAdWizardController;
+			sourceTree = "<group>";
+		};
+		17F3D6D027369E5800D94571 /* ViewClasses */ = {
+			isa = PBXGroup;
+			children = (
+				17F3D6D127369E7C00D94571 /* SearchField.swift */,
+			);
+			path = ViewClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,7 +230,9 @@
 				17F3D6952736805600D94571 /* ViewController.swift in Sources */,
 				17F3D6912736805600D94571 /* AppDelegate.swift in Sources */,
 				17F3D6B02736822300D94571 /* ThemeManager.swift in Sources */,
+				17F3D6D227369E7C00D94571 /* SearchField.swift in Sources */,
 				17F3D6CA273696AA00D94571 /* UILabel.swift in Sources */,
+				17F3D6CF27369D5000D94571 /* UITextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
