@@ -14,6 +14,7 @@
                 <outlet property="categoryLbl" destination="T0d-4T-vKi" id="8Q5-kX-ykg"/>
                 <outlet property="nextBtn" destination="8z8-1H-atq" id="t05-7A-BPA"/>
                 <outlet property="pagerContainerView" destination="uvw-EF-Bsg" id="EN9-vZ-O5a"/>
+                <outlet property="progressBar" destination="9dL-is-psW" id="abe-xd-umh"/>
                 <outlet property="selectedCategoryLbl" destination="XRP-Yl-UjS" id="sg6-q0-Gef"/>
                 <outlet property="titleLbl" destination="Ba2-HI-rZS" id="cki-lP-0yL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -42,7 +43,7 @@
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="A6A-fe-bbg">
                     <rect key="frame" x="96" y="116.5" width="222" height="50"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9dL-is-psW">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9dL-is-psW" customClass="CircularProgressBar" customModule="QatarSale" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>

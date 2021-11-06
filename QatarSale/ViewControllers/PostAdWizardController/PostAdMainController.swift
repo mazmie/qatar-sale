@@ -15,6 +15,7 @@ class PostAdMainController: UIViewController {
     @IBOutlet weak var pagerContainerView: UIView!
     @IBOutlet weak var buttonContainerView: UIView!
     @IBOutlet weak var nextBtn: UIButton!
+    @IBOutlet weak var progressBar: CircularProgressBar!
     
     let pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
     var direction: UIPageViewController.NavigationDirection = .forward
@@ -23,6 +24,10 @@ class PostAdMainController: UIViewController {
         super.viewDidLoad()
 
         setup()
+    }
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        progressBar.setProgress(to: 0.2, withAnimation: true)
     }
     
     func setup() {
@@ -34,6 +39,7 @@ class PostAdMainController: UIViewController {
         setupPager()
         setCurrentController()
         setupButtonContainerView()
+        setupProgressBar()
     }
     
     private func setupNextBtn() {
@@ -75,5 +81,16 @@ class PostAdMainController: UIViewController {
                 animated: true,
                 completion: nil)
         }
+    }
+    
+    func setupProgressBar() {
+        progressBar.lineWidth = 5
+//        progressBar.safePercent = 100
+        progressBar.lineBackgroundColor = ThemeManager.Color._ebebeb.color
+        progressBar.lineColor = ThemeManager.Color._0091ff.color
+        progressBar.lineFinishColor = ThemeManager.Color._0091ff.color
+        
+        progressBar.label.text = "1 of 5"
+        progressBar.labelSize = 11
     }
 }

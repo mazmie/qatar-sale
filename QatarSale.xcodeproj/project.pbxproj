@@ -32,6 +32,7 @@
 		17F3D7062736C78000D94571 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17F3D7012736C78000D94571 /* CategoryCell.xib */; };
 		17F3D7072736C78000D94571 /* CategoryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3D7032736C78000D94571 /* CategoryHeader.swift */; };
 		17F3D7082736C78000D94571 /* CategoryHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17F3D7042736C78000D94571 /* CategoryHeader.xib */; };
+		17F3D70B2736EB6400D94571 /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3D70A2736EB6400D94571 /* CircularProgressBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		17F3D7012736C78000D94571 /* CategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
 		17F3D7032736C78000D94571 /* CategoryHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryHeader.swift; sourceTree = "<group>"; };
 		17F3D7042736C78000D94571 /* CategoryHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryHeader.xib; sourceTree = "<group>"; };
+		17F3D70A2736EB6400D94571 /* CircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		17F3D68F2736805600D94571 /* QatarSale */ = {
 			isa = PBXGroup;
 			children = (
+				17F3D7092736EB5900D94571 /* Libs */,
 				17F3D6E32736BACA00D94571 /* Models */,
 				17F3D6E02736B86F00D94571 /* Repositories */,
 				17F3D6D027369E5800D94571 /* ViewClasses */,
@@ -244,6 +247,14 @@
 			path = CategoryHeader;
 			sourceTree = "<group>";
 		};
+		17F3D7092736EB5900D94571 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				17F3D70A2736EB6400D94571 /* CircularProgressBar.swift */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -325,6 +336,7 @@
 				17F3D6EF2736BB3E00D94571 /* PostAdCategoryController.swift in Sources */,
 				17F3D6ED2736BB3E00D94571 /* VehicleCell.swift in Sources */,
 				17F3D6E52736BAD400D94571 /* Vehicle.swift in Sources */,
+				17F3D70B2736EB6400D94571 /* CircularProgressBar.swift in Sources */,
 				17F3D7052736C78000D94571 /* CategoryCell.swift in Sources */,
 				17F3D7072736C78000D94571 /* CategoryHeader.swift in Sources */,
 				17F3D6E22736B88A00D94571 /* VehiclesRepo.swift in Sources */,
