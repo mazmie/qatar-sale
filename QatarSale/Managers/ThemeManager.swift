@@ -43,6 +43,8 @@ class ThemeManager {
         case _252933
         case _919191
         case _0091ff
+        case _1b418d
+        case white
         
         var color: UIColor {
             switch self {
@@ -53,6 +55,8 @@ class ThemeManager {
             case ._252933: return UIColor(named: "#252933")!
             case ._919191: return UIColor(named: "#919191")!
             case ._0091ff: return UIColor(named: "#0091FF")!
+            case ._1b418d: return UIColor(named: "#1B418D")!
+            case .white: return UIColor.white
             }
         }
         
