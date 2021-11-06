@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PostAdCategoryController" customModule="QatarSale" customModuleProvider="target">
             <connections>
+                <outlet property="categoryTbl" destination="tLa-Ii-vgF" id="Rgv-jf-YEU"/>
                 <outlet property="searchFld" destination="hQy-nJ-3uM" id="A24-P2-7Cd"/>
                 <outlet property="vehicleTbl" destination="wVk-7I-4O3" id="3wg-sc-oAB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>

@@ -28,6 +28,10 @@
 		17F3D6F02736BB3E00D94571 /* PostAdCategoryController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17F3D6EC2736BB3E00D94571 /* PostAdCategoryController.xib */; };
 		17F3D6FC2736C1A200D94571 /* CategoryRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3D6FB2736C1A200D94571 /* CategoryRepo.swift */; };
 		17F3D6FE2736C24400D94571 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3D6FD2736C24400D94571 /* Category.swift */; };
+		17F3D7052736C78000D94571 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3D7002736C78000D94571 /* CategoryCell.swift */; };
+		17F3D7062736C78000D94571 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17F3D7012736C78000D94571 /* CategoryCell.xib */; };
+		17F3D7072736C78000D94571 /* CategoryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3D7032736C78000D94571 /* CategoryHeader.swift */; };
+		17F3D7082736C78000D94571 /* CategoryHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17F3D7042736C78000D94571 /* CategoryHeader.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +58,10 @@
 		17F3D6EC2736BB3E00D94571 /* PostAdCategoryController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostAdCategoryController.xib; sourceTree = "<group>"; };
 		17F3D6FB2736C1A200D94571 /* CategoryRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepo.swift; sourceTree = "<group>"; };
 		17F3D6FD2736C24400D94571 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		17F3D7002736C78000D94571 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		17F3D7012736C78000D94571 /* CategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
+		17F3D7032736C78000D94571 /* CategoryHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryHeader.swift; sourceTree = "<group>"; };
+		17F3D7042736C78000D94571 /* CategoryHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryHeader.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +210,8 @@
 		17F3D6E72736BB3E00D94571 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				17F3D6FF2736C78000D94571 /* CategoryCell */,
+				17F3D7022736C78000D94571 /* CategoryHeader */,
 				17F3D6E82736BB3E00D94571 /* VehicleCell */,
 			);
 			path = Cells;
@@ -214,6 +224,24 @@
 				17F3D6EA2736BB3E00D94571 /* VehicleCell.xib */,
 			);
 			path = VehicleCell;
+			sourceTree = "<group>";
+		};
+		17F3D6FF2736C78000D94571 /* CategoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				17F3D7002736C78000D94571 /* CategoryCell.swift */,
+				17F3D7012736C78000D94571 /* CategoryCell.xib */,
+			);
+			path = CategoryCell;
+			sourceTree = "<group>";
+		};
+		17F3D7022736C78000D94571 /* CategoryHeader */ = {
+			isa = PBXGroup;
+			children = (
+				17F3D7032736C78000D94571 /* CategoryHeader.swift */,
+				17F3D7042736C78000D94571 /* CategoryHeader.xib */,
+			);
+			path = CategoryHeader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,11 +304,13 @@
 			files = (
 				17F3D6B6273683B200D94571 /* Nunito-Regular.ttf in Resources */,
 				17F3D69D2736805700D94571 /* LaunchScreen.storyboard in Resources */,
+				17F3D7082736C78000D94571 /* CategoryHeader.xib in Resources */,
 				17F3D6F02736BB3E00D94571 /* PostAdCategoryController.xib in Resources */,
 				17F3D6EE2736BB3E00D94571 /* VehicleCell.xib in Resources */,
 				17F3D69A2736805700D94571 /* Assets.xcassets in Resources */,
 				17F3D6B7273683B200D94571 /* Nunito-Bold.ttf in Resources */,
 				17F3D6982736805600D94571 /* Main.storyboard in Resources */,
+				17F3D7062736C78000D94571 /* CategoryCell.xib in Resources */,
 				17F3D6C8273696A000D94571 /* PostAdMainController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +325,8 @@
 				17F3D6EF2736BB3E00D94571 /* PostAdCategoryController.swift in Sources */,
 				17F3D6ED2736BB3E00D94571 /* VehicleCell.swift in Sources */,
 				17F3D6E52736BAD400D94571 /* Vehicle.swift in Sources */,
+				17F3D7052736C78000D94571 /* CategoryCell.swift in Sources */,
+				17F3D7072736C78000D94571 /* CategoryHeader.swift in Sources */,
 				17F3D6E22736B88A00D94571 /* VehiclesRepo.swift in Sources */,
 				17F3D6C7273696A000D94571 /* PostAdMainController.swift in Sources */,
 				17F3D6952736805600D94571 /* ViewController.swift in Sources */,
