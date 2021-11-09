@@ -15,6 +15,7 @@ class PostAdMainController: UIViewController {
     @IBOutlet weak var pagerContainerView: UIView!
     @IBOutlet weak var buttonContainerView: UIView!
     @IBOutlet weak var nextBtn: UIButton!
+    @IBOutlet weak var closeBtn: UIButton!
     @IBOutlet weak var progressBar: CircularProgressBar!
     
     let pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
@@ -40,6 +41,9 @@ class PostAdMainController: UIViewController {
         setCurrentController()
         setupButtonContainerView()
         setupProgressBar()
+        
+        closeBtn.setTitle("", for: .normal)
+        closeBtn.setImage(UIImage(named: "times")?.withRenderingMode(.alwaysOriginal), for: .normal)
     }
     
     private func setupNextBtn() {
