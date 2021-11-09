@@ -29,6 +29,8 @@ class PostAdMainController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         progressBar.setProgress(to: 0.2, withAnimation: true)
+        
+        pageViewController.view.frame = pagerContainerView.bounds
     }
     
     func setup() {
